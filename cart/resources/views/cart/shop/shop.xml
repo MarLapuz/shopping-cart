@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.5.1
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Sep 08, 2017 at 04:19 AM
+- Server version: 10.1.16-MariaDB
+- PHP Version: 5.6.24
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="shop" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="products">
+                CREATE TABLE `products` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `name` varchar(50) NOT NULL,
+                  `description` text NOT NULL,
+                  `price` float NOT NULL,
+                  `shipping` float NOT NULL,
+                  `quantity` int(11) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'shop'
+    -->
+    <database name="shop">
+        <!-- Table products -->
+        <table name="products">
+            <column name="id">1</column>
+            <column name="name">Air Jordan XIII(13) Retro (Bred)</column>
+            <column name="description">Released in 1997, the Air Jordan XIII has become a favorite in the Air Jordan line. Designer Tinker Hatfield thought Jordan's movements on the court were similar to a panther, so he used the sleek animal as an inspiration for this Air Jordan model. </column>
+            <column name="price">10500</column>
+            <column name="shipping">400</column>
+            <column name="quantity">10</column>
+        </table>
+        <table name="products">
+            <column name="id">2</column>
+            <column name="name">Adidas Pharrell Williams Tennis HU</column>
+            <column name="description">Adidas teamed up with Pharrell Williams on this limited remix of a classic court model. The Adidas Pharrell Williams Tennis HU features a Primeknit upper, sock-like construction, perforated 3-Stripes, and a rubber sole</column>
+            <column name="price">6500</column>
+            <column name="shipping">400</column>
+            <column name="quantity">25</column>
+        </table>
+        <table name="products">
+            <column name="id">3</column>
+            <column name="name">Nike Air Max Zero QS</column>
+            <column name="description">The Nike Air Max Zero is the recently released pre-concept design for the legendary Air Max 1. They are constructed with a breathable textile upper, structural overlays, sock-like bootie construction, phylon midsole, visible Air-Sole, and a rubber outsole. </column>
+            <column name="price">6000</column>
+            <column name="shipping">400</column>
+            <column name="quantity">20</column>
+        </table>
+    </database>
+</pma_xml_export>
